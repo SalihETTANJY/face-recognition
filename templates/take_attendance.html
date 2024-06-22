@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Prendre la Présence</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Prendre la Présence</h1>
+        <video id="video" width="640" height="480" autoplay></video>
+        <button id="capture">Capturer la Photo</button>
+        <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
+        <p id="resultat"></p>
+    </div>
+    <script src="{{ url_for('static', filename='js/take_attendance.js') }}"></script>
+</body>
+</html>
